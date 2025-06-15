@@ -1,0 +1,40 @@
+.header_container {
+    background: var(--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 180px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header_links a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 40px;
+    color: aliceblue;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.header_links a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #542399;
+    transition: all 0.3s ease;
+}
+
+.header_links a:hover::after {
+    width: 90%;
+}
+
+.logo {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    left: 230px;
+    width: 1.8rem;
+}
