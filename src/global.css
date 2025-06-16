@@ -3,16 +3,14 @@
     --header: #1A0B2E;
     --main-bg: #11071f;
     --span-text: #7127BA;
-
-    
+    --button-bg: #2C1250;
+    --button-border: #693B93;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
 }
 
 body {
