@@ -3,6 +3,7 @@ import Home from './components/Home';
 import About from './components/About';
 
 import './global.css'
+import About_2 from './components/About2';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <About_2 />
     </div>
   )
 }

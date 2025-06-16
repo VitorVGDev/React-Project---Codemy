@@ -11,8 +11,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background: var(--main-bg);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(166, 58, 255, 0.466);
+    border-radius: 5rem;
+    box-shadow: 0 4px 30px rgba(248, 248, 248, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem;
+    transition: opacity 0.4s, visibility 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#back-to-top:hover {
+    background-color: #440083;
+}
+
+#back-to-top img {
+    transition: 0.2s ease-out;
+}
+
+#back-to-top:hover img {
+    transform: translateY(-0.15rem);
+}
+
+#back-to-top.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }

@@ -30,7 +30,9 @@ function Home() {
                 <p className={styles.footer_home_text}>Because if the cover does not impress you what else can?</p>  
 
                 <div className={styles.home_profission}>
-                    <h1>I'm a Software Engineer.|</h1>
+                    <h1>I'm a Software Engineer.
+                        <span className={styles.span_line}>|</span>
+                    </h1>
                     <p>Currently, I'm a Software Engineer at
                     <img src={Facebook_logo} alt="" />
                     <span>Facebook</span>,</p>
