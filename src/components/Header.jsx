@@ -10,7 +10,7 @@ function Header() {
 
             <div className={styles.header_links}>
                 <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="./About.jsx">About</a>
                 <a href="#">Lab</a>
             </div>
         </div>

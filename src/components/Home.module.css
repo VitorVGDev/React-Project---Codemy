@@ -4,7 +4,9 @@
     color: aliceblue;
     font-family: "Preahvihear", sans-serif;
     display: flex;
-    padding: 150px 200px;
+    padding: 120px;
+    justify-content: center;
+    height: 100vh;
     gap: 10px;
 }
 
@@ -19,15 +21,25 @@
 .blur {
     box-shadow: 0 0 120px 100px #6817b3;
     position: absolute;
-    top: 5rem;
+    top: 5.5rem;
+    left: 50%;
+    z-index: -100;
+}
+
+.blur2 {
+    box-shadow: 0 0 120px 100px #6817b3;
+    position: absolute;
+    bottom: -3rem;
     left: 50%;
     z-index: -100;
 }
 
 .text_home {
-    max-width: 350px;
+    max-width: 600px;
     position: relative;
     top: -5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .presentation_home {
@@ -39,7 +51,7 @@
 .curvy_arrow {
     position: relative;
     top: 1.6rem;
-    left: -5rem;
+    left: -5.3rem;
     width: 3.75rem;
 }
 
@@ -64,4 +76,35 @@
 
 .footer_home_text {
     color: rgb(205, 205, 205);
+}
+
+.home_profission {
+    position: relative;
+    font-family: 'Preahvihear', sans-serif;
+    top: 5rem;
+    right: 10.8rem;
+}
+
+.home_profission h1 {
+    font-weight: 100;
+}
+
+.home_profission p {
+    position: relative;
+    top: -1rem;
+    font-size: 0.875rem;
+}
+
+.home_profission img {
+    width: 0.8rem;
+    margin: 0px 3px 0px 5px;
+    vertical-align: middle;
+}
+
+.home_profission span {
+    color: #1877F2;
+}
+
+.text_profission {
+    margin-top: 20px;
 }
