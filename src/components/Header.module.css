@@ -32,9 +32,54 @@
 }
 
 .logo {
-    position: relative;
-    top: 50%;
-    bottom: 50%;
     width: 1.8rem;
+    height: auto; 
 }
 
+/* Media Queries existentes e refinadas */
+@media (max-width: 1024px) { /* Ajuste para tablets e telas menores */
+    .header_container {
+        padding: 20px 60px;
+    }
+    .header_links a {
+        margin: 0 15px;
+    }
+    
+}
+
+@media (max-width: 768px) { /* Tablet e mobile */
+    .header_container {
+        flex-direction: column;
+        align-items: center; /* Centralizar logo e links quando empilhados */
+        padding: 20px 30px;
+        gap: 1rem;
+    }
+    .header_links {
+        display: flex; /* Para garantir que os links fiquem em linha se necessário */
+        flex-wrap: wrap; /* Permitir quebra de linha dos links */
+        justify-content: space-between; /* Centralizar links */
+        gap: 10px; /* Espaço entre links */
+    }
+    .header_links a {
+        margin: 10px; /* Ajuste de margem para links */
+        font-size: 0.95rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .logo {
+       display: none;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile específico */
+    .header_container {
+        padding: 15px 20px;
+    }
+    .header_links a {
+        font-size: 0.9rem;
+        margin: 5px 8px; /* Menor margem */
+    }
+    .logo {
+       display: none;
+    }
+}

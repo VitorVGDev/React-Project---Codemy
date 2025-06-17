@@ -128,3 +128,89 @@
     margin-top: 20px;
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .home_container {
+        padding: 100px 40px;
+        gap: 30px;
+    }
+    .person_img {
+        width: 200px;
+    }
+    .text_home h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_container {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+        min-height: auto; /* Permitir altura automática em mobile */
+        gap: 40px;
+        justify-content: center;
+        margin-right: 3.8rem;
+    }
+
+    .text_home {
+        max-width: 100%;
+        order: 2; /* Colocar texto abaixo da imagem se desejar */
+        margin-top: 3rem;
+    }
+    .img_home_div {
+        order: 1; /* Colocar imagem acima do texto se desejar */
+    }
+    .person_img {
+        display: none;
+    }
+    .presentation_home {
+       display: none;
+    }
+    .blur { /* Ajustar ou simplificar blur */
+        box-shadow: 0 0 80px 60px #6817b3;
+    }
+    .text_home h1 {
+        font-size: 2rem;
+    }
+    .curvy_arrow { 
+        display: none;
+    }
+
+    .home_profission { /* Ajustar posicionamento */
+        position: static;
+        margin-top: 20px;
+    }
+
+    .home_profission > h1 {
+        font-size: 1.3rem;
+    }
+
+    .home_profission > p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_container {
+        padding: 60px 15px;
+        gap: 30px;
+    }
+    .person_img {
+        display: none;
+    }
+    .blur {
+        position: relative;
+        left: -10rem;
+        top: 0;
+    }
+    .text_home h1 {
+        font-size: 1.6rem;
+    }
+    .text_home p {
+        font-size: 0.9rem;
+    }
+    .home_profission h1 {
+        font-size: 1.1rem;
+    }
+}
