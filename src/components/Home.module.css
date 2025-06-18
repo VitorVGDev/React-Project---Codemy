@@ -29,13 +29,6 @@
     z-index: -100;
 }
 
-.blur2 {
-    box-shadow: 0 0 120px 100px #6817b3;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    z-index: -100;
-}
 
 .text_home {
     max-width: 600px;
@@ -147,7 +140,7 @@
         flex-direction: column;
         text-align: center;
         padding: 80px 20px;
-        min-height: auto; /* Permitir altura automática em mobile */
+        min-height: auto; 
         gap: 40px;
         justify-content: center;
         margin-right: 3.8rem;
@@ -155,11 +148,11 @@
 
     .text_home {
         max-width: 100%;
-        order: 2; /* Colocar texto abaixo da imagem se desejar */
+        order: 2; 
         margin-top: 3rem;
     }
     .img_home_div {
-        order: 1; /* Colocar imagem acima do texto se desejar */
+        order: 1;
     }
     .person_img {
         display: none;
@@ -167,9 +160,11 @@
     .presentation_home {
        display: none;
     }
-    .blur { /* Ajustar ou simplificar blur */
+    
+    .blur {
         box-shadow: 0 0 80px 60px #6817b3;
     }
+
     .text_home h1 {
         font-size: 2rem;
     }

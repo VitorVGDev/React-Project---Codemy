@@ -7,6 +7,7 @@ import img_group4 from '../assets/Group 4.png';
 function About () {
     return (
         <div className={styles.about_container} id='about'>
+            <span className={styles.blur2}></span>
             <div className={styles.about_content_wrapper}>
                 <div className={styles.about_grid}>
                     <div className={styles.header_about}>

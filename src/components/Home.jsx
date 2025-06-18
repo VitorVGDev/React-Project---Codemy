@@ -44,7 +44,6 @@ function Home() {
                     </p>
                 </div>
             </div>
-           <span className={styles.blur2}></span>
         </div>
     )
 }

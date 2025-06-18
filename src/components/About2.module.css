@@ -51,23 +51,36 @@
   margin-bottom: 2.5rem;
 }
 
-.icons_row img:nth-child(8) {
-    grid-column-start: 2;
-}
-
-.icons_row img {
+.icon_circle {
   width: 50px;
   height: 50px;
   background: #251C31;
   border-radius: 50%;
+  box-shadow: 0 0 12px #a97cf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icon_circle img {
+  width: 70%;
+  height: 70%;
   object-fit: contain;
-  padding: 0.3rem;
+  display: block;
 }
 
-.icons_row img:nth-child(13) {
-    justify-self: start;
+.icons_row .icon_circle:nth-child(8) {
+    grid-column-start: 2;
 }
 
+.icons_row .icon_circle:nth-child(5) img {
+  width: 1.7rem;
+}
+
+.icons_row .icon_circle:nth-child(10) img {
+  width: 1.7rem;
+} 
 .orbitals {
   position: relative;
   width: 100%;
@@ -89,16 +102,15 @@
   to bottom,
   rgba(48, 16, 128) 0%,
   rgba(67, 29, 140) 84%,
-  rgba(120, 64, 173) 100%
-   );
+  rgb(85, 4, 160) 100%
+  );
+  box-shadow: 0 0 12px #a97cf7;
   border-radius: 50%;
-  box-shadow: 0 0 80px 30px #a97cf755;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-
 
 .central_logo img {
   width: 90px;
@@ -106,26 +118,27 @@
   filter: brightness(1.2);
 }
 
-.orbit_svg {
+.elipse_gradient {
   position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  pointer-events: none;
+  top: 5rem;
 }
 
-.orbital_icon {
+.elipse_gradient img {
+  width: 30rem;
+}
+
+.elipses_center {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  background: #23123a;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 8px #a97cf7;
-  z-index: 3;
+  bottom: -2rem;
+}
+
+.bottom_elipses{
+  position: absolute;
+  top: 4rem;
+}
+
+.bottom_elipses img {
+  width: 18rem;
 }
 
 .orbital_icon img {
@@ -134,9 +147,10 @@
 }
 
 .lines {
-    position: relative;
-    top: -3.3rem;
-    right: 0.5rem;
+  position: relative;
+  top: -4.5rem;
+  right: 0.5rem;
+  z-index: -100;
 }
 
 
@@ -164,9 +178,27 @@
         width: 70px;
         height: 70px;
     }
-    .orbitals {
-        height: 280px;
-        margin-top: 1rem;
+
+    .elipses_center {
+      top: 10rem;
+    }
+
+    .elipses_center img {
+      width: 30rem;
+    }
+
+    .bottom_elipses{
+      position: absolute;
+      top: 8.7rem;
+    }
+
+    .bottom_elipses img {
+      width: 10rem;
+    }
+
+    .lines {
+      top: -5rem;
+      z-index: -100;
     }
 
 }
@@ -194,7 +226,22 @@
         width: 30px; 
         height: 30px;
     }
-    .orbitals { 
-        display: none;
+
+    .elipses_center {
+      position: absolute;
+      top: 12rem;
+    }
+
+    .elipses_center img{
+      width: 22rem;
+    }
+
+    .bottom_elipses{
+      position: absolute;
+      top: 8.7rem;
+    }
+
+    .bottom_elipses img {
+      width: 10rem;
     }
   }

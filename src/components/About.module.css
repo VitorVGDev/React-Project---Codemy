@@ -9,6 +9,13 @@
     width: 100%;
 }
 
+.blur2 {
+    box-shadow: 0 0 120px 100px #6817b3;
+    position: absolute;
+    width: 40rem;
+    z-index: -100;
+}
+
 .about_content_wrapper {
     width: 100%;
     display: flex;
