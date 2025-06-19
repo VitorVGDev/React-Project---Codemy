@@ -11,7 +11,7 @@ function Header() {
             <div className={styles.header_links}>
                 <a href="#">Home</a>
                 <a href="#about">About</a>
-                <a href="#">Lab</a>
+                <a href="#lab">Lab</a>
             </div>
         </div>
     )

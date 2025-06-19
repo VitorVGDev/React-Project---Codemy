@@ -16,6 +16,7 @@
 
 body {
     background: var(--main-bg);
+    overflow-x: hidden;
 }
 
 #back-to-top {
