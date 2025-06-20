@@ -5,6 +5,7 @@ import About from './components/About';
 import './global.css'
 import About_2 from './components/About2';
 import Lab from './components/Lab';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <About_2 />
       <Lab />
+      <Footer />
     </div>
   )
 }

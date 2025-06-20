@@ -221,6 +221,7 @@
     .icons_row {
         gap: 0.8rem;
         margin-bottom: 2rem;
+        margin-left: 0.5rem;
     }
     .icons_row img {
         width: 30px; 
