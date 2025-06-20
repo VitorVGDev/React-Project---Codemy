@@ -113,6 +113,13 @@
     border: 0.125rem solid var(--button-border);
     background: var(--button-bg);
     margin-top: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button_about:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(179, 56, 255, 0.5);
 }
 
 .img_about {
